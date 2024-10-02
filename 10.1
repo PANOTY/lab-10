@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    char name[100]; // ตัวแปรเพื่อเก็บชื่อและนามสกุล
+
+    printf("Enter your name:\n");
+    fgets(name, sizeof(name), stdin); // ใช้ fgets เพื่ออ่านชื่อและนามสกุลรวมกัน
+
+    printf("Name: %s", name); // แสดงผลชื่อและนามสกุล
+
+    return 0;
+}
